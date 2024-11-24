@@ -1,8 +1,20 @@
+import { Container } from "./Container";
+import Header from "./Header";
+import Section from "./Section";
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Container>
+      <Header
+        name={"Krystian Krupiński"}
+        aboutMe={
+          <>
+            blacj aoskdka osasokd <br /> wajjkasjas
+          </>
+        }
+      />
+      <Section />
+    </Container>
   );
 }
 
