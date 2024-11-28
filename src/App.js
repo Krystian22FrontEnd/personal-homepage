@@ -9,11 +9,7 @@ function App() {
   return (
     <Container>
       <Header
-        img={
-          <>
-            <img src={poster} alt="" />
-          </>
-        }
+        img={<img src={poster} alt="" />}
         alt=""
         name={"Krystian Krupiński"}
         aboutMe={
