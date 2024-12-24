@@ -1,13 +1,23 @@
-const Header = ({name, aboutMe}) => {
+import { Wrapper, Image, ColumnWrapper } from "./styled";
+import {FlexContainer} from "../Container/index"
+import poster from "../images/poster.png";
+
+const Header = ({ children }) => {
   return (
-    <div>
-      <p>
-        <b>This is</b>
-      </p>
-      <h1>{name}</h1>
-<p>{aboutMe}</p>
-<button>Hire me</button>
-    </div>
+    <FlexContainer>
+      <Wrapper>
+        {children}
+        <Image src={poster} alt="poster" />
+        <ColumnWrapper>
+          <p>
+            <b>This is</b>
+          </p>
+          <h1>Krystian Krupiński</h1>
+          <p>lorem ios</p>
+          <button>Hire me</button>
+        </ColumnWrapper>
+      </Wrapper>
+    </FlexContainer>
   );
 };
 
