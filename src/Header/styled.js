@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.header`
   max-width: 1089px;
   margin-top: 115px;
-  margin-bottom: 10px;
+  margin-bottom: 73px;
   display: flex;
 `;
 
