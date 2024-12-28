@@ -10,7 +10,8 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: ${({theme}) => theme.color.mischka};
+  font-family: "Inter", serif;
+  background-color: ${({ theme }) => theme.color.whiteLilac};
+  margin-top: 119px;
 }
 `;

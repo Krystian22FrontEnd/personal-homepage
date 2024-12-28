@@ -1,23 +1,43 @@
-import { Wrapper, Image, ColumnWrapper } from "./styled";
-import {FlexContainer} from "../Container/index"
+import {
+  Span,
+  HeaderSwitchButton,
+  HeaderSwitchButtonWrapper,
+  HeaderToggleOffIcon,
+  HeaderContainer,
+  HeaderImage,
+  HeaderColumnWrapper,
+  HeaderParagraph,
+  HeaderH2,
+  HeaderDescription,
+  HeaderButton,
+  HeaderMessageIcon,
+} from "./styled";
 import poster from "../images/poster.png";
 
-const Header = ({ children }) => {
+const Header = () => {
   return (
-    <FlexContainer>
-      <Wrapper>
-        {children}
-        <Image src={poster} alt="poster" />
-        <ColumnWrapper>
-          <p>
-            <b>This is</b>
-          </p>
-          <h1>Krystian Krupiński</h1>
-          <p>lorem ios</p>
-          <button>Hire me</button>
-        </ColumnWrapper>
-      </Wrapper>
-    </FlexContainer>
+    <>
+      <HeaderSwitchButtonWrapper>
+        <HeaderSwitchButton>
+          <Span>DARK MODE OFF</Span> <HeaderToggleOffIcon />
+        </HeaderSwitchButton>
+      </HeaderSwitchButtonWrapper>
+      <HeaderContainer>
+        <HeaderImage src={poster} alt="poster" />
+        <HeaderColumnWrapper>
+          <HeaderParagraph>This is</HeaderParagraph>
+          <HeaderH2>Krystian Krupiński</HeaderH2>
+          <HeaderDescription>
+            👨🏻‍💻 I'm a passionate Frontend Developer in love with React, currently
+            looking for new job opportunities.
+          </HeaderDescription>
+          <HeaderButton>
+            <HeaderMessageIcon />
+            Hire me
+          </HeaderButton>
+        </HeaderColumnWrapper>
+      </HeaderContainer>
+    </>
   );
 };
 
