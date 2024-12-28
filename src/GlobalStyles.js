@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Inter", serif;
-  background-color: ${({ theme }) => theme.color.mischka};
+  background-color: ${({ theme }) => theme.color.whiteLilac};
+  margin-top: 119px;
 }
 `;
