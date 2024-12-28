@@ -2,22 +2,19 @@ import styled from "styled-components";
 import { ReactComponent as MessageIcon } from "../icons/Message.svg";
 import { ReactComponent as ToggleOffLightIcon } from "../icons/ToggleOffLight.svg";
 
-export const HeaderContainer = styled.header`
-  margin-top: 115px;
-  margin-bottom: 73px;
-`;
-
-export const ActualButton = styled.button`
-  background: none;
-  border: none;
-`;
-
-export const HeaderSwitchButton = styled.div`
+export const HeaderSwitchButtonWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
 `;
 
-export const HeaderToggleOffButton = styled(ToggleOffLightIcon)`
+export const HeaderSwitchButton = styled.button`
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+`;
+
+export const HeaderToggleOffIcon = styled(ToggleOffLightIcon)`
   width: 48px;
   height: 26px;
 `;
@@ -26,6 +23,15 @@ export const Span = styled.span`
   font-size: 12px;
   font-weight: 700;
   line-height: 15.6px;
+  color: ${({ theme }) => theme.color.slateGrey};
+`;
+
+export const HeaderContainer = styled.header`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 66px;
+  align-items: center;
+  margin-bottom: 73px;
 `;
 
 export const HeaderImage = styled.img`
