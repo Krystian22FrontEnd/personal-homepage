@@ -9,9 +9,9 @@ function App() {
   return (
     <Container>
       <Header />
-      <Section title={"My skillset includes"} body={<Skillset />} />
-      <Section title={"What i want to learn next"} body={<ToLearn />} />
-      <PortfolioSection/>
+      <Section title={"My skillset includes 🛠️"} body={<Skillset />} />
+      <Section title={"What i want to learn next 🚀"} body={<ToLearn />} />
+      <PortfolioSection />
     </Container>
   );
 }

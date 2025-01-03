@@ -4,7 +4,7 @@ export const SectionWrapper = styled.section`
   margin-bottom: 72px;
   padding: 32px;
   background-color: ${({ theme }) => theme.color.white};
-  box-shadow: 0px 4px 12px 0px hsla(211, 24%, 78%, 0.5);
+  box-shadow: 0px 4px 12px 0px ${({ theme }) => theme.color.darkHeather};
 `;
 
 export const SectionHeader = styled.h2`
@@ -13,5 +13,9 @@ export const SectionHeader = styled.h2`
   line-height: 36.31px;
   margin: 0;
   padding-bottom: 15px;
-  border-bottom: 1px solid #d1d5da4d;
+  border-bottom: 1px solid ${({ theme }) => theme.color.darkIron};
+  display: flex;
+  gap: 16px;
+  align-items: center;
 `;
+
