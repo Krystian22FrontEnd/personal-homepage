@@ -18,7 +18,7 @@ export const StyledLi = styled.li`
   font-size: 18px;
   font-weight: 400;
   line-height: 25.2px;
-  color: ${({ theme }) => theme.color.slateGrey};
+  color: ${({ theme }) => theme.color.slateGray};
 
   &::marker {
     color: ${({ theme }) => theme.color.scienceBlue};

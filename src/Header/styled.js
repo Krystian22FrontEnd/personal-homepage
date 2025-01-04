@@ -23,7 +23,7 @@ export const Span = styled.span`
   font-size: 12px;
   font-weight: 700;
   line-height: 15.6px;
-  color: ${({ theme }) => theme.color.slateGrey};
+  color: ${({ theme }) => theme.color.slateGray};
 `;
 
 export const HeaderContainer = styled.header`
@@ -51,7 +51,7 @@ export const HeaderParagraph = styled.p`
   font-size: 12px;
   font-weight: 700;
   line-height: 15.6px;
-  color: ${({ theme }) => theme.color.slateGrey};
+  color: ${({ theme }) => theme.color.slateGray};
   margin: 0;
   padding-bottom: 12px;
 `;
@@ -68,7 +68,7 @@ export const HeaderDescription = styled.p`
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  color: ${({ theme }) => theme.color.slateGrey};
+  color: ${({ theme }) => theme.color.slateGray};
   margin: 0;
   padding-bottom: 32px;
 `;
