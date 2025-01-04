@@ -10,6 +10,7 @@ import {
   PortfolioParagraphLink,
   GridWrapper,
 } from "./styled";
+import Loading from "../Loading";
 
 const PortfolioSection = () => {
   return (
@@ -17,6 +18,7 @@ const PortfolioSection = () => {
       <StyledGitIcon />
       <PortfolioHeader>Portfolio</PortfolioHeader>
       <PortfolioParagraph>My recent projects</PortfolioParagraph>
+      {/* <Loading/> */}
       <PortfolioContentWrapper>
         <PortfolioContent>
           <PortfolioContentTitle>Movie Browser</PortfolioContentTitle>

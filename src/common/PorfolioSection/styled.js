@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as GitIcon } from "../icons/mark-github.svg";
+import { ReactComponent as GitIcon } from "../../icons/mark-github.svg";
 
 export const FlexContainer = styled.div`
   align-items: center;
@@ -27,7 +27,6 @@ export const PortfolioParagraph = styled.p`
   font-weight: 400;
   line-height: 28px;
   margin: 0;
-  padding-bottom: 24px;
 `;
 
 export const PortfolioContentWrapper = styled.div`
@@ -35,6 +34,7 @@ export const PortfolioContentWrapper = styled.div`
   grid-template-columns: repeat(2, minmax(592px, 1fr));
   grid-template-rows: repeat(3, minmax(322px, 1fr));
   gap: 32px;
+  margin-top: 24px;
 `;
 
 export const PortfolioContent = styled.div`
@@ -42,7 +42,7 @@ export const PortfolioContent = styled.div`
   border-radius: 4px;
   border: 6px solid ${({ theme }) => theme.color.darkIron};
   box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.color.darkViolet};
-  color: ${({theme}) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.color.scienceBlue};
   display: grid;
   align-items: start;
   padding: 56px;
@@ -54,22 +54,22 @@ export const PortfolioContentTitle = styled.h3`
   font-weight: 700;
   line-height: 29.05px;
   margin: 0;
-`
+`;
 
 export const PortfolioDescription = styled.p`
-font-size: 18px;
-font-weight: 400;
-line-height: 25.2px;
-margin: 0;
-color: ${({theme}) => theme.color.slateGray};
-`
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  margin: 0;
+  color: ${({ theme }) => theme.color.slateGray};
+`;
 
 export const PortfolioParagraphLink = styled(PortfolioParagraph)`
-color: ${({theme}) => theme.color.slateGray};
-padding-bottom: 0;
-`
+  color: ${({ theme }) => theme.color.slateGray};
+  padding-bottom: 0;
+`;
 
 export const GridWrapper = styled.div`
-display: grid;
-gap: 8px;
-`
+  display: grid;
+  gap: 8px;
+`;

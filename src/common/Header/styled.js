@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as MessageIcon } from "../icons/Message.svg";
-import { ReactComponent as ToggleOffLightIcon } from "../icons/ToggleOffLight.svg";
+import { ReactComponent as MessageIcon } from "../../icons/Message.svg";
+import { ReactComponent as ToggleOffLightIcon } from "../../icons/ToggleOffLight.svg";
 
 export const HeaderSwitchButtonWrapper = styled.div`
   display: flex;
