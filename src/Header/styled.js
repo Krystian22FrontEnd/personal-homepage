@@ -62,6 +62,7 @@ export const HeaderH2 = styled.h2`
   line-height: 45.99px;
   margin: 0;
   padding-bottom: 35px;
+  color: ${({theme}) => theme.color.mineShaft};
 `;
 
 export const HeaderDescription = styled.p`

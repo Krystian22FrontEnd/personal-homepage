@@ -8,6 +8,6 @@ export const theme = {
     darkHeather: "#b9c6d480",
     darkIron: "#d1d5da4d",
     darkViolet: "#090A3308",
-    black: "#000000",
+    mineShaft: "#252525",
   },
 };

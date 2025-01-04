@@ -17,7 +17,7 @@ export const PortfolioHeader = styled.h2`
   font-size: 30px;
   font-weight: 900;
   line-height: 36.31px;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.mineShaft};
   margin: 0;
   padding-bottom: 8px;
 `;

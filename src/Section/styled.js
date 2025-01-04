@@ -17,5 +17,6 @@ export const SectionHeader = styled.h2`
   display: flex;
   gap: 16px;
   align-items: center;
+  color: ${({theme}) => theme.color.mineShaft};
 `;
 
