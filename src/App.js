@@ -1,10 +1,10 @@
-import { Container } from "./Container";
-import Header from "./Header";
-import Section from "./Section";
-import Skillset from "./Skillset";
-import ToLearn from "./ToLearn";
-import PortfolioSection from "./PorfolioSection";
-import Footer from "./Footer";
+import { Container } from "./common/Container";
+import Header from "./common/Header";
+import Section from "./common/Section";
+import Skillset from "./common/Skillset";
+import ToLearn from "./common/ToLearn";
+import PortfolioSection from "./common/PorfolioSection";
+import Footer from "./common/Footer";
 
 function App() {
   return (
