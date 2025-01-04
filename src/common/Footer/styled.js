@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as LinkedinIcon } from "../icons/LinkedIN_black.svg";
+import { ReactComponent as LinkedinIcon } from "../../icons/LinkedIN_black.svg";
 import { StyledGitIcon } from "../PorfolioSection/styled";
 
 export const FooterWrapper = styled.div`
