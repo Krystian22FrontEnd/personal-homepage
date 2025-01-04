@@ -4,8 +4,10 @@ export const theme = {
     whiteLilac: "#FBFBFE",
     mischka: "#E5E4E7",
     scienceBlue: "#0366D6",
-    slateGrey: "#6E7E91",
+    slateGray: "#6E7E91",
     darkHeather: "#b9c6d480",
     darkIron: "#d1d5da4d",
+    darkViolet: "#090A3308",
+    black: "#000000",
   },
 };
