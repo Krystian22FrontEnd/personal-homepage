@@ -11,7 +11,7 @@ export const useRepoData = ({ username }) => {
     const axiosData = async () => {
       try {
         const octokit = new Octokit({
-          auth: "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",
+          auth: "TOKEN",
         });
 
         const response = await octokit.request("GET /repos/{owner}/{repo}", {
