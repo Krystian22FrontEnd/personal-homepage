@@ -11,8 +11,14 @@ import {
   GridWrapper,
 } from "./styled";
 import Loading from "../Loading";
+import { useRepoData } from "../../useRepoData";
 
 const PortfolioSection = () => {
+  const username = "Krystian22FrontEnd"
+//  const repoData = useRepoData(username);
+ const repoData = useRepoData({ username: "Krystian22FrontEnd" });
+ console.log(repoData.description);
+
   return (
     <FlexContainer>
       <StyledGitIcon />
@@ -32,69 +38,12 @@ const PortfolioSection = () => {
             <PortfolioParagraphLink>Code:</PortfolioParagraphLink>
           </GridWrapper>
         </PortfolioContent>
-        <PortfolioContent>
-          <PortfolioContentTitle>To-do-list-react</PortfolioContentTitle>
-          <PortfolioDescription>
-            Project description, e.g. website where you can search for favourite
-            movies and people. Project description, e.g. website where you can
-            search.
-          </PortfolioDescription>
-          <GridWrapper>
-            <PortfolioParagraphLink>Demo:</PortfolioParagraphLink>
-            <PortfolioParagraphLink>Code:</PortfolioParagraphLink>
-          </GridWrapper>
-        </PortfolioContent>
-        <PortfolioContent>
-          <PortfolioContentTitle>To-do-list</PortfolioContentTitle>
-          <PortfolioDescription>
-            Project description, e.g. website where you can search for favourite
-            movies and people. Project description, e.g. website where you can
-            search.
-          </PortfolioDescription>
-          <GridWrapper>
-            <PortfolioParagraphLink>Demo:</PortfolioParagraphLink>
-            <PortfolioParagraphLink>Code:</PortfolioParagraphLink>
-          </GridWrapper>
-        </PortfolioContent>
-        <PortfolioContent>
-          <PortfolioContentTitle>
-            Currency converter-react
-          </PortfolioContentTitle>
-          <PortfolioDescription>
-            Project description, e.g. website where you can search for favourite
-            movies and people. Project description, e.g. website where you can
-            search.
-          </PortfolioDescription>
-          <GridWrapper>
-            <PortfolioParagraphLink>Demo:</PortfolioParagraphLink>
-            <PortfolioParagraphLink>Code:</PortfolioParagraphLink>
-          </GridWrapper>
-        </PortfolioContent>
-        <PortfolioContent>
-          <PortfolioContentTitle>Currency converter</PortfolioContentTitle>
-          <PortfolioDescription>
-            Project description, e.g. website where you can search for favourite
-            movies and people. Project description, e.g. website where you can
-            search.
-          </PortfolioDescription>
-          <GridWrapper>
-            <PortfolioParagraphLink>Demo:</PortfolioParagraphLink>
-            <PortfolioParagraphLink>Code:</PortfolioParagraphLink>
-          </GridWrapper>
-        </PortfolioContent>
-        <PortfolioContent>
-          <PortfolioContentTitle>Homepage</PortfolioContentTitle>
-          <PortfolioDescription>
-            Project description, e.g. website where you can search for favourite
-            movies and people. Project description, e.g. website where you can
-            search.
-          </PortfolioDescription>
-          <GridWrapper>
-            <PortfolioParagraphLink>Demo:</PortfolioParagraphLink>
-            <PortfolioParagraphLink>Code:</PortfolioParagraphLink>
-          </GridWrapper>
-        </PortfolioContent>
-      </PortfolioContentWrapper>
+    </PortfolioContentWrapper>
+    <ul>
+      <li>
+        {JSON.stringify(repoData.description)}
+      </li>
+    </ul>
     </FlexContainer>
   );
 };
