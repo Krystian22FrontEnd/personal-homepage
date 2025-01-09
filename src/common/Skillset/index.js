@@ -1,12 +1,14 @@
 import { Wrapper, StyledUl, StyledLi } from "./styled";
+import {skills} from "./skills"
 
 const Skillset = () => {
+  const ehSkills = skills.map(({skill}) => skill)
   return (
     <Wrapper>
       <StyledUl>
         <Wrapper>
-          <StyledLi>Semantic & accessible HTML</StyledLi>
-          <StyledLi>Responsive Web Design</StyledLi>
+          <StyledLi>{ehSkills}</StyledLi>
+          {/* <StyledLi>Responsive Web Design</StyledLi>
           <StyledLi>Teamwork</StyledLi>
           <StyledLi>Markdown</StyledLi>
           <StyledLi>Immutability</StyledLi>
@@ -30,7 +32,7 @@ const Skillset = () => {
           <StyledLi>Scrum</StyledLi>
           <StyledLi>NPM</StyledLi>
           <StyledLi>React</StyledLi>
-          <StyledLi>Git</StyledLi>
+          <StyledLi>Git</StyledLi> */}
         </Wrapper>
       </StyledUl>
     </Wrapper>
