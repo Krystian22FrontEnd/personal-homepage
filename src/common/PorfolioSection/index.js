@@ -17,7 +17,7 @@ const PortfolioSection = () => {
   const username = "Krystian22FrontEnd"
 //  const repoData = useRepoData(username);
  const repoData = useRepoData({ username: "Krystian22FrontEnd" });
- console.log(repoData.description);
+ console.log(repoData);
 
   return (
     <FlexContainer>
@@ -27,21 +27,19 @@ const PortfolioSection = () => {
       {/* <Loading/> */}
       <PortfolioContentWrapper>
         <PortfolioContent>
-          <PortfolioContentTitle>Movie Browser</PortfolioContentTitle>
+          <PortfolioContentTitle>{repoData.name}</PortfolioContentTitle>
           <PortfolioDescription>
-            Project description, e.g. website where you can search for favourite
-            movies and people. Project description, e.g. website where you can
-            search.
+           {repoData.description}
           </PortfolioDescription>
           <GridWrapper>
-            <PortfolioParagraphLink>Demo:</PortfolioParagraphLink>
-            <PortfolioParagraphLink>Code:</PortfolioParagraphLink>
+            <PortfolioParagraphLink>Demo: {repoData.demo}</PortfolioParagraphLink>
+            <PortfolioParagraphLink>Code: {repoData.code}</PortfolioParagraphLink>
           </GridWrapper>
         </PortfolioContent>
     </PortfolioContentWrapper>
     <ul>
       <li>
-        {JSON.stringify(repoData.description)}
+        {JSON.stringify(repoData.homepage)}
       </li>
     </ul>
     </FlexContainer>

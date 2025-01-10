@@ -11,7 +11,7 @@ export const useRepoData = ({ username }) => {
     const axiosData = async () => {
       try {
         const octokit = new Octokit({
-          auth: "TOKEN",
+          auth: "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",
         });
 
         const response = await octokit.request("GET /repos/{owner}/{repo}", {
@@ -26,6 +26,9 @@ export const useRepoData = ({ username }) => {
           owner: response.data.owner,
           data: response.data,
           description: response.data.description,
+          name: response.data.name,
+          demo: response.data.homepage,
+          code: response.data.svn_url
         });
       } catch (error) {
         setRepoData({
