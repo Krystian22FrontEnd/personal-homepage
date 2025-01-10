@@ -1,25 +1,14 @@
-import {
-  Wrapper,
-  StyledUl,
-  StyledLi,
-} from "../Skillset/styled";
+import { Wrapper, StyledUl, StyledLi } from "../Skillset/styled";
+
+import { toLearn } from "../Skillset/skillsData";
 
 const ToLearn = () => {
   return (
     <Wrapper>
       <StyledUl>
-        <Wrapper>
-          <StyledLi>React Context</StyledLi>
-          <StyledLi>Node.js</StyledLi>
-        </Wrapper>
-        <Wrapper>
-          <StyledLi>Cypres</StyledLi>
-          <StyledLi>Unit Testing</StyledLi>
-        </Wrapper>
-        <Wrapper>
-          <StyledLi>TypeScript</StyledLi>
-          <StyledLi>JS classes</StyledLi>
-        </Wrapper>
+        {toLearn.map((learn) => (
+          <StyledLi key={learn}>{learn}</StyledLi>
+        ))}
       </StyledUl>
     </Wrapper>
   );

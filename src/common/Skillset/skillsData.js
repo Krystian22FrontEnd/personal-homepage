@@ -1,4 +1,4 @@
-const skills = [
+export const skillsData = [
   "Semantic & accessible HTML",
   "Responsive Web Design",
   "Teamwork",
@@ -21,5 +21,13 @@ const skills = [
   "NPM",
   "React",
   "Git",
-  "Teamwork",
+];
+
+export const toLearn = [
+  "React Context",
+  "Node.js",
+  "Cypres",
+  "Unit Testing",
+  "TypeScript",
+  "JS classes",
 ];
