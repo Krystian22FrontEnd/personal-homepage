@@ -1,8 +1,7 @@
 import axios from "axios";
-import { Octokit } from "@octokit/core";
 import { useEffect, useState } from "react";
 
-export const useRepoData = ({ username }) => {
+export const useRepoData = ({username = "Krystian22FrontEnd"}) => {
   const [repoData, setRepoData] = useState({
     status: "loading",
   });
@@ -10,17 +9,11 @@ export const useRepoData = ({ username }) => {
   useEffect(() => {
     const axiosData = async () => {
       try {
-        const octokit = new Octokit({
-          auth: "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",
-        });
+        const githubAPIBaseURL = "https://api.github.com";
+        const response = axios
+          .get(`${githubAPIBaseURL}/users/${username}/repos`)
+          .then((response) => response.data);
 
-        const response = await octokit.request("GET /repos/{owner}/{repo}", {
-          owner: "Krystian22FrontEnd",
-          repo: "Homepage",
-          headers: {
-            "X-GitHub-Api-Version": "2022-11-28",
-          },
-        });
         setRepoData({
           status: "success",
           owner: response.data.owner,
@@ -28,7 +21,7 @@ export const useRepoData = ({ username }) => {
           description: response.data.description,
           name: response.data.name,
           demo: response.data.homepage,
-          code: response.data.svn_url
+          code: response.data.svn_url,
         });
       } catch (error) {
         setRepoData({
