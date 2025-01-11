@@ -1,3 +1,4 @@
+import email from "./email";
 import {
   FooterWrapper,
   FooterParagraph,
@@ -12,7 +13,7 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <FooterParagraph>Let's talk</FooterParagraph>
-      <FooterEmail>krupinskikrystian01@gmail.com</FooterEmail>
+      <FooterEmail>{email}</FooterEmail>
       <FooterDescrtiption>
         I'm always open to new projects whenever I have the time. If you have a
         website, dashboard or mobile app in mind and need some help to make your
