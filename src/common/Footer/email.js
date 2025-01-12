@@ -1,1 +1,1 @@
-export default email = "krupinskikrystian01@gmail.com";
+export default "krupinskikrystian01@gmail.com";

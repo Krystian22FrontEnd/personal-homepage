@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import username from "./common/PorfolioSection/username";
 
-export const useRepoData = ({username = "Krystian22FrontEnd"}) => {
+export const useRepoData = () => {
   const [repoData, setRepoData] = useState({
     status: "loading",
   });
@@ -10,19 +11,17 @@ export const useRepoData = ({username = "Krystian22FrontEnd"}) => {
     const axiosData = async () => {
       try {
         const githubAPIBaseURL = "https://api.github.com";
-        const response = axios
+        await axios
           .get(`${githubAPIBaseURL}/users/${username}/repos`)
-          .then((response) => response.data);
-
-        setRepoData({
-          status: "success",
-          owner: response.data.owner,
-          data: response.data,
-          description: response.data.description,
-          name: response.data.name,
-          demo: response.data.homepage,
-          code: response.data.svn_url,
-        });
+          .then((response) =>
+            setRepoData({
+              status: "success",
+              data: response.data,
+              name: response.data[0].name,
+              url: response.data[0].html_url,
+              desc: response.data[0].description
+            })
+          );
       } catch (error) {
         setRepoData({
           status: "error",

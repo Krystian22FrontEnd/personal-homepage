@@ -14,10 +14,8 @@ import Loading from "../Loading";
 import { useRepoData } from "../../useRepoData";
 
 const PortfolioSection = () => {
-  const username = "Krystian22FrontEnd"
-//  const repoData = useRepoData(username);
- const repoData = useRepoData({ username: "Krystian22FrontEnd" });
- console.log(repoData);
+  const repoData = useRepoData({ username: "Krystian22FrontEnd" });
+  console.log(repoData.data);
 
   return (
     <FlexContainer>
@@ -28,20 +26,17 @@ const PortfolioSection = () => {
       <PortfolioContentWrapper>
         <PortfolioContent>
           <PortfolioContentTitle>{repoData.name}</PortfolioContentTitle>
-          <PortfolioDescription>
-           {repoData.description}
-          </PortfolioDescription>
+          <PortfolioDescription>{repoData.desc}</PortfolioDescription>
           <GridWrapper>
-            <PortfolioParagraphLink>Demo: {repoData.demo}</PortfolioParagraphLink>
-            <PortfolioParagraphLink>Code: {repoData.code}</PortfolioParagraphLink>
+            <PortfolioParagraphLink>Demo: {repoData.url}</PortfolioParagraphLink>
+            <PortfolioParagraphLink>Code: </PortfolioParagraphLink>
           </GridWrapper>
         </PortfolioContent>
-    </PortfolioContentWrapper>
-    <ul>
-      <li>
-        {JSON.stringify(repoData.homepage)}
-      </li>
-    </ul>
+      </PortfolioContentWrapper>
+      <ul>
+        <li>
+        </li>
+      </ul>
     </FlexContainer>
   );
 };
