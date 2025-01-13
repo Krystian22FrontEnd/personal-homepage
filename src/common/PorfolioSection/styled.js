@@ -11,6 +11,7 @@ export const StyledGitIcon = styled(GitIcon)`
   width: 40px;
   height: 40px;
   margin-bottom: 12px;
+  fill: ${({theme}) => theme.color.scienceBlue};
 `;
 
 export const PortfolioHeader = styled.h2`
@@ -29,31 +30,33 @@ export const PortfolioParagraph = styled.p`
   margin: 0;
 `;
 
-export const PortfolioContentWrapper = styled.div`
+export const PortfolioList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, minmax(592px, 1fr));
-  grid-template-rows: repeat(3, minmax(322px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
   gap: 32px;
   margin-top: 24px;
+  padding: 0;
 `;
 
-export const PortfolioContent = styled.div`
+export const PortfolioListContent = styled.li`
   background-color: ${({ theme }) => theme.color.white};
   border-radius: 4px;
   border: 6px solid ${({ theme }) => theme.color.darkIron};
   box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.color.darkViolet};
-  color: ${({ theme }) => theme.color.scienceBlue};
-  display: grid;
-  align-items: start;
+
   padding: 56px;
+  list-style-type: none;
+  display: grid;
   gap: 24px;
 `;
 
-export const PortfolioContentTitle = styled.h3`
+export const PortfolioName = styled.h3`
   font-size: 24px;
   font-weight: 700;
   line-height: 29.05px;
   margin: 0;
+  color: ${({ theme }) => theme.color.scienceBlue};
 `;
 
 export const PortfolioDescription = styled.p`
@@ -64,10 +67,19 @@ export const PortfolioDescription = styled.p`
   color: ${({ theme }) => theme.color.slateGray};
 `;
 
-export const PortfolioParagraphLink = styled(PortfolioParagraph)`
+export const PortfolioParagraphLink = styled(PortfolioDescription)`
   color: ${({ theme }) => theme.color.slateGray};
+  display: grid;
+  grid-template-columns: 64px 1fr;
   padding-bottom: 0;
 `;
+
+export const PortfolioLink = styled.a`
+text-decoration: none;
+/* padding-bottom: 1px;
+border-bottom: 1px solid rgba(3, 102, 214, 0.3); */
+color: ${({theme}) => theme.color.scienceBlue};
+`
 
 export const GridWrapper = styled.div`
   display: grid;

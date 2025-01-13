@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 export const StyledUl = styled.ul`
   padding: 32px 0 0 24px;
   display: grid;
-  gap: 8px;
+  gap: 8px 115px;
   grid-template-columns: repeat(3, 1fr);
   margin: 0;
 `;
