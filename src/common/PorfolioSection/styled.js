@@ -11,7 +11,7 @@ export const StyledGitIcon = styled(GitIcon)`
   width: 40px;
   height: 40px;
   margin-bottom: 12px;
-  fill: ${({theme}) => theme.color.scienceBlue};
+  fill: ${({ theme }) => theme.color.scienceBlue};
 `;
 
 export const PortfolioHeader = styled.h2`
@@ -44,7 +44,6 @@ export const PortfolioListContent = styled.li`
   border-radius: 4px;
   border: 6px solid ${({ theme }) => theme.color.darkIron};
   box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.color.darkViolet};
-
   padding: 56px;
   list-style-type: none;
   display: grid;
@@ -75,11 +74,12 @@ export const PortfolioParagraphLink = styled(PortfolioDescription)`
 `;
 
 export const PortfolioLink = styled.a`
-text-decoration: none;
-/* padding-bottom: 1px;
+  text-decoration: none;
+  /* padding-bottom: 1px;
 border-bottom: 1px solid rgba(3, 102, 214, 0.3); */
-color: ${({theme}) => theme.color.scienceBlue};
-`
+  color: ${({ theme }) => theme.color.scienceBlue};
+  word-break: break-all;
+`;
 
 export const GridWrapper = styled.div`
   display: grid;
