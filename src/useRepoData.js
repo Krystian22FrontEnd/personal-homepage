@@ -5,23 +5,32 @@ import username from "./common/PorfolioSection/username";
 export const useRepoData = () => {
   const [repoData, setRepoData] = useState({
     status: "loading",
+    data: [],
   });
 
   useEffect(() => {
     const axiosData = async () => {
       try {
         const githubAPIBaseURL = "https://api.github.com";
-        await axios
-          .get(`${githubAPIBaseURL}/users/${username}/repos`)
-          .then((response) =>
-            setRepoData({
-              status: "success",
-              data: response.data,
-              name: response.data[0].name,
-              url: response.data[0].html_url,
-              desc: response.data[0].description
-            })
-          );
+        const response = await axios.get(
+          `${githubAPIBaseURL}/users/${username}/repos?sort=created`
+        );
+        const filteredRepos = response.data.filter((repo) =>
+          [
+            "movie-browser",
+            "personal-homepage",
+            "CurrencyConverter-React",
+            "To-do-list-React",
+            "Tasks-List",
+            "CurrencyConventer",
+            "Homepage",
+          ].includes(repo.name)
+        );
+
+        setRepoData({
+          status: "success",
+          data: filteredRepos,
+        });
       } catch (error) {
         setRepoData({
           status: "error",
@@ -29,7 +38,7 @@ export const useRepoData = () => {
       }
     };
     setTimeout(axiosData, 1000);
-  }, [username]);
+  }, []);
 
   return repoData;
 };
