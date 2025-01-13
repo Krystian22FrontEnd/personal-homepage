@@ -1,27 +1,35 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import username from "./common/PorfolioSection/username";
 
-export const useRepoData = ({username = "Krystian22FrontEnd"}) => {
+export const useRepoData = () => {
   const [repoData, setRepoData] = useState({
     status: "loading",
+    data: [],
   });
 
   useEffect(() => {
     const axiosData = async () => {
       try {
         const githubAPIBaseURL = "https://api.github.com";
-        const response = axios
-          .get(`${githubAPIBaseURL}/users/${username}/repos`)
-          .then((response) => response.data);
+        const response = await axios.get(
+          `${githubAPIBaseURL}/users/${username}/repos?sort=created`
+        );
+        const filteredRepos = response.data.filter((repo) =>
+          [
+            "movie-browser",
+            "personal-homepage",
+            "CurrencyConverter-React",
+            "To-do-list-React",
+            "Tasks-List",
+            "CurrencyConventer",
+            "Homepage",
+          ].includes(repo.name)
+        );
 
         setRepoData({
           status: "success",
-          owner: response.data.owner,
-          data: response.data,
-          description: response.data.description,
-          name: response.data.name,
-          demo: response.data.homepage,
-          code: response.data.svn_url,
+          data: filteredRepos,
         });
       } catch (error) {
         setRepoData({
@@ -30,7 +38,7 @@ export const useRepoData = ({username = "Krystian22FrontEnd"}) => {
       }
     };
     setTimeout(axiosData, 1000);
-  }, [username]);
+  }, []);
 
   return repoData;
 };
