@@ -26,7 +26,7 @@ export const FooterEmail = styled.p`
   color: ${({ theme }) => theme.color.mineShaft};
   margin: 0;
 
-  :hover {
+  &:hover {
     color: ${({ theme }) => theme.color.scienceBlue};
   }
 `;

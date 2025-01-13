@@ -86,6 +86,10 @@ export const HeaderButton = styled.button`
   color: ${({ theme }) => theme.color.white};
   display: flex;
   justify-content: space-around;
+
+  &:hover {
+    border: 1px solid #D1D5DA4D;
+  }
 `;
 
 export const HeaderMessageIcon = styled(MessageIcon)`
