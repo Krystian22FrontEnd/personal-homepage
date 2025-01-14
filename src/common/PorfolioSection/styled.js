@@ -48,6 +48,10 @@ export const PortfolioListContent = styled.li`
   list-style-type: none;
   display: grid;
   gap: 24px;
+
+  &:hover {
+    border: 6px solid ${({ theme }) => theme.color.jordyBlue};
+  }
 `;
 
 export const PortfolioName = styled.h3`
@@ -71,14 +75,17 @@ export const PortfolioParagraphLink = styled(PortfolioDescription)`
   display: grid;
   grid-template-columns: 64px 1fr;
   padding-bottom: 0;
+  line-height: 1.6;
 `;
 
 export const PortfolioLink = styled.a`
-  text-decoration: none;
-  /* padding-bottom: 1px;
-border-bottom: 1px solid rgba(3, 102, 214, 0.3); */
   color: ${({ theme }) => theme.color.scienceBlue};
+  text-decoration: none;
   word-break: break-all;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const GridWrapper = styled.div`

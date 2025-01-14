@@ -19,15 +19,17 @@ export const FooterParagraph = styled.p`
   margin: 0;
 `;
 
-export const FooterEmail = styled.p`
+export const FooterEmail = styled.a`
   font-size: 32px;
   font-weight: 900;
   line-height: 38.73px;
   color: ${({ theme }) => theme.color.mineShaft};
   margin: 0;
+  text-decoration: none;
 
   &:hover {
     color: ${({ theme }) => theme.color.scienceBlue};
+    cursor: pointer;
   }
 `;
 
@@ -53,17 +55,21 @@ export const StyledGitBlack = styled(StyledGitIcon)`
   height: 48px;
   margin-right: 24px;
   margin-bottom: 0;
+  pointer-events: bounding-box;
 
   :hover {
     fill: ${({ theme }) => theme.color.scienceBlue};
+    cursor: pointer;
   }
 `;
 
 export const StyledLinkedinIcon = styled(LinkedinIcon)`
   width: 48px;
   height: 48px;
+  pointer-events: bounding-box;
 
   :hover {
     fill: ${({ theme }) => theme.color.scienceBlue};
+    cursor: pointer;
   }
 `;
