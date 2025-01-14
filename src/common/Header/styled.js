@@ -62,7 +62,7 @@ export const HeaderH2 = styled.h2`
   line-height: 45.99px;
   margin: 0;
   padding-bottom: 35px;
-  color: ${({theme}) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.color.mineShaft};
 `;
 
 export const HeaderDescription = styled.p`
@@ -74,7 +74,7 @@ export const HeaderDescription = styled.p`
   padding-bottom: 32px;
 `;
 
-export const HeaderButton = styled.button`
+export const HeaderButton = styled.a`
   font-size: 20.06px;
   font-weight: 600;
   line-height: 24.28px;
@@ -86,6 +86,12 @@ export const HeaderButton = styled.button`
   color: ${({ theme }) => theme.color.white};
   display: flex;
   justify-content: space-around;
+  text-decoration: none;
+
+  &:hover {
+    border: 1px solid ${({ theme }) => theme.color.darkIron};
+    cursor: pointer;
+  }
 `;
 
 export const HeaderMessageIcon = styled(MessageIcon)`

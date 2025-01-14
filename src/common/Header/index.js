@@ -13,6 +13,7 @@ import {
   HeaderMessageIcon,
 } from "./styled";
 import poster from "../../images/poster.png";
+import email from "../PersonalData/email";
 
 const Header = () => {
   return (
@@ -31,7 +32,9 @@ const Header = () => {
             👨🏻‍💻 I'm a passionate Frontend Developer in love with React, currently
             looking for new job opportunities.
           </HeaderDescription>
-          <HeaderButton>
+          <HeaderButton
+            href={`mailto:${email}`}
+          >
             <HeaderMessageIcon />
             Hire me
           </HeaderButton>
