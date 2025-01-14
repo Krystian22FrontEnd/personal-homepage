@@ -9,6 +9,12 @@ export const FooterWrapper = styled.div`
   justify-content: flex-start;
   margin: 120px 0 109px 0;
   gap: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    max-width: 288px;
+    margin: 48px 16px 31px 16px;
+    gap: 12px;
+  }
 `;
 
 export const FooterParagraph = styled.p`
@@ -31,6 +37,11 @@ export const FooterEmail = styled.a`
     color: ${({ theme }) => theme.color.scienceBlue};
     cursor: pointer;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 18px;
+    line-height: 21.78px;
+  }
 `;
 
 export const FooterDescrtiption = styled.p`
@@ -41,6 +52,12 @@ export const FooterDescrtiption = styled.p`
   text-align: justify;
   padding-bottom: 32px;
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 14px;
+    line-height: 16.94px;
+    padding-bottom: 40px;
+  }
 `;
 
 export const FooterLinks = styled.div`
@@ -61,15 +78,28 @@ export const StyledGitBlack = styled(StyledGitIcon)`
     fill: ${({ theme }) => theme.color.scienceBlue};
     cursor: pointer;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
 `;
 
 export const StyledLinkedinIcon = styled(LinkedinIcon)`
-  width: 48px;
+    width: 48px;
   height: 48px;
+  margin-right: 24px;
   pointer-events: bounding-box;
 
   :hover {
     fill: ${({ theme }) => theme.color.scienceBlue};
     cursor: pointer;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
   }
 `;

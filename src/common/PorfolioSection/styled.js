@@ -5,6 +5,10 @@ export const FlexContainer = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+   margin: 0 16px 0 16px;
+  }
 `;
 
 export const StyledGitIcon = styled(GitIcon)`
@@ -12,6 +16,11 @@ export const StyledGitIcon = styled(GitIcon)`
   height: 40px;
   margin-bottom: 12px;
   fill: ${({ theme }) => theme.color.scienceBlue};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 export const PortfolioHeader = styled.h2`
@@ -21,6 +30,12 @@ export const PortfolioHeader = styled.h2`
   color: ${({ theme }) => theme.color.mineShaft};
   margin: 0;
   padding-bottom: 8px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 18px;
+    line-height: 21.78px;
+    padding-bottom: 16px;
+  }
 `;
 
 export const PortfolioParagraph = styled.p`
@@ -28,6 +43,11 @@ export const PortfolioParagraph = styled.p`
   font-weight: 400;
   line-height: 28px;
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 17px;
+    line-height: 23.8px;
+  }
 `;
 
 export const PortfolioList = styled.ul`
@@ -37,6 +57,11 @@ export const PortfolioList = styled.ul`
   gap: 32px;
   margin-top: 24px;
   padding: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 `;
 
 export const PortfolioListContent = styled.li`
@@ -52,6 +77,11 @@ export const PortfolioListContent = styled.li`
   &:hover {
     border: 6px solid ${({ theme }) => theme.color.jordyBlue};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    padding: 24px;
+    gap: 16px;
+  }
 `;
 
 export const PortfolioName = styled.h3`
@@ -60,6 +90,11 @@ export const PortfolioName = styled.h3`
   line-height: 29.05px;
   margin: 0;
   color: ${({ theme }) => theme.color.scienceBlue};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
 `;
 
 export const PortfolioDescription = styled.p`
@@ -68,6 +103,11 @@ export const PortfolioDescription = styled.p`
   line-height: 25.2px;
   margin: 0;
   color: ${({ theme }) => theme.color.slateGray};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 14px;
+    line-height: 16.94px;
+  }
 `;
 
 export const PortfolioParagraphLink = styled(PortfolioDescription)`
@@ -76,6 +116,11 @@ export const PortfolioParagraphLink = styled(PortfolioDescription)`
   grid-template-columns: 64px 1fr;
   padding-bottom: 0;
   line-height: 1.6;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    line-height: 1.2;
+    grid-template-columns: 48px 1fr;
+  }
 `;
 
 export const PortfolioLink = styled.a`
@@ -91,4 +136,8 @@ export const PortfolioLink = styled.a`
 export const GridWrapper = styled.div`
   display: grid;
   gap: 8px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    gap: 2px;
+  }
 `;

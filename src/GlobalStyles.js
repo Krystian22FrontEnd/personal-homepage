@@ -13,5 +13,9 @@ body {
   font-family: "Inter", serif;
   background-color: ${({ theme }) => theme.color.whiteLilac};
   margin-top: 119px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    margin-top: 21px;
+  }
 }
 `;
