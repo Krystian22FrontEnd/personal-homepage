@@ -13,6 +13,10 @@ export const StyledUl = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   margin: 0;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     padding: 12px 0 0 19px;
     gap: 8px;

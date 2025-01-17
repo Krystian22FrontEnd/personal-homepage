@@ -6,6 +6,10 @@ export const SectionWrapper = styled.section`
   background-color: ${({ theme }) => theme.color.white};
   box-shadow: 0px 4px 12px 0px ${({ theme }) => theme.color.darkHeather};
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    margin: 0 16px 72px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
    margin: 0 14px 50px;
    padding: 16px;

@@ -14,6 +14,7 @@ export const theme = {
 
   breakpoint: {
     iphoneSE: "376px",
-    mobile: "768px",
-  }
+    mobile: "767px",
+    tabletHorizontal: "1199px",
+  },
 };

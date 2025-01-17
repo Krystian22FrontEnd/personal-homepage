@@ -6,6 +6,10 @@ export const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+   margin: 0 16px 0;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
    margin: 0 16px 0 16px;
   }

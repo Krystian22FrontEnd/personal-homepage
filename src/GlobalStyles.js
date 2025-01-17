@@ -14,6 +14,10 @@ body {
   background-color: ${({ theme }) => theme.color.whiteLilac};
   margin-top: 119px;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    margin-top: 50px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 21px;
   }

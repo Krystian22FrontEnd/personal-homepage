@@ -10,6 +10,10 @@ export const FooterWrapper = styled.div`
   margin: 120px 0 109px 0;
   gap: 24px;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    margin: 120px 16px 109px ;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     max-width: 288px;
     margin: 48px 16px 31px 16px;

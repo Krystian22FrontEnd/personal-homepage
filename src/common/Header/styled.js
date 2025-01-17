@@ -6,8 +6,12 @@ export const HeaderSwitchButtonWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    margin-right: 20px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-   margin-right: 17px;
+    margin-right: 17px;
   }
 `;
 
@@ -44,7 +48,7 @@ export const HeaderContainer = styled.header`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     grid-template-columns: 1fr;
     gap: 16px;
-    margin: 0 0 48px 16px;
+    margin: 0 27px 48px 16px;
   }
 `;
 
@@ -54,9 +58,14 @@ export const HeaderImage = styled.img`
   border-radius: 360px;
   margin-right: 66px;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    margin: 0 0 0 16px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     width: 128px;
     height: 128px;
+    margin-right: 0;
   }
 `;
 
@@ -64,6 +73,10 @@ export const HeaderColumnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    margin-right: 16px;
+  }
 `;
 
 export const HeaderParagraph = styled.p`
@@ -106,7 +119,7 @@ export const HeaderDescription = styled.p`
     font-size: 17px;
     line-height: 23.8px;
     padding-bottom: 24px;
-    padding-right: 27px;
+    text-align: justify;
   }
 `;
 
