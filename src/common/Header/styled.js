@@ -5,6 +5,14 @@ import { ReactComponent as ToggleOffLightIcon } from "../../icons/ToggleOffLight
 export const HeaderSwitchButtonWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    margin-right: 17px;
+  }
 `;
 
 export const HeaderSwitchButton = styled.button`
@@ -24,6 +32,10 @@ export const Span = styled.span`
   font-weight: 700;
   line-height: 15.6px;
   color: ${({ theme }) => theme.color.slateGray};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    display: none;
+  }
 `;
 
 export const HeaderContainer = styled.header`
@@ -32,6 +44,12 @@ export const HeaderContainer = styled.header`
   gap: 66px;
   align-items: center;
   margin-bottom: 73px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 0 27px 48px 16px;
+  }
 `;
 
 export const HeaderImage = styled.img`
@@ -39,12 +57,26 @@ export const HeaderImage = styled.img`
   height: 398px;
   border-radius: 360px;
   margin-right: 66px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    margin: 0 0 0 16px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 128px;
+    height: 128px;
+    margin-right: 0;
+  }
 `;
 
 export const HeaderColumnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    margin-right: 16px;
+  }
 `;
 
 export const HeaderParagraph = styled.p`
@@ -54,6 +86,10 @@ export const HeaderParagraph = styled.p`
   color: ${({ theme }) => theme.color.slateGray};
   margin: 0;
   padding-bottom: 12px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    padding-bottom: 8px;
+  }
 `;
 
 export const HeaderH2 = styled.h2`
@@ -63,6 +99,12 @@ export const HeaderH2 = styled.h2`
   margin: 0;
   padding-bottom: 35px;
   color: ${({ theme }) => theme.color.mineShaft};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 22px;
+    line-height: 26.63px;
+    padding-bottom: 16px;
+  }
 `;
 
 export const HeaderDescription = styled.p`
@@ -72,6 +114,13 @@ export const HeaderDescription = styled.p`
   color: ${({ theme }) => theme.color.slateGray};
   margin: 0;
   padding-bottom: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 17px;
+    line-height: 23.8px;
+    padding-bottom: 24px;
+    text-align: justify;
+  }
 `;
 
 export const HeaderButton = styled.a`
@@ -92,9 +141,20 @@ export const HeaderButton = styled.a`
     border: 1px solid ${({ theme }) => theme.color.darkIron};
     cursor: pointer;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 18px;
+    line-height: 21.78px;
+    width: 138px;
+  }
 `;
 
 export const HeaderMessageIcon = styled(MessageIcon)`
   width: 24px;
   height: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 20px;
+    height: 20px;
+  }
 `;

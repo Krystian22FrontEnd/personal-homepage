@@ -11,4 +11,10 @@ export const theme = {
     darkViolet: "#090A3308",
     mineShaft: "#252525",
   },
+
+  breakpoint: {
+    iphoneSE: "376px",
+    mobile: "767px",
+    tabletHorizontal: "1199px",
+  },
 };

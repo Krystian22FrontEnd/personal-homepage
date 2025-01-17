@@ -12,6 +12,16 @@ export const StyledUl = styled.ul`
   gap: 8px 115px;
   grid-template-columns: repeat(3, 1fr);
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    padding: 12px 0 0 19px;
+    gap: 8px;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const StyledLi = styled.li`
@@ -23,5 +33,14 @@ export const StyledLi = styled.li`
   &::marker {
     color: ${({ theme }) => theme.color.scienceBlue};
     font-size: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+   font-size: 14px;
+   line-height: 16.94px;
+
+   &::marker {
+    font-size: 18px;
+  }
   }
 `;

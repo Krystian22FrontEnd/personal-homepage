@@ -5,6 +5,15 @@ export const SectionWrapper = styled.section`
   padding: 32px;
   background-color: ${({ theme }) => theme.color.white};
   box-shadow: 0px 4px 12px 0px ${({ theme }) => theme.color.darkHeather};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
+    margin: 0 16px 72px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+   margin: 0 14px 50px;
+   padding: 16px;
+  }
 `;
 
 export const SectionHeader = styled.h2`
@@ -18,5 +27,10 @@ export const SectionHeader = styled.h2`
   gap: 16px;
   align-items: center;
   color: ${({theme}) => theme.color.mineShaft};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+   font-size: 18px;
+   line-height: 21.78px;
+  }
 `;
 
