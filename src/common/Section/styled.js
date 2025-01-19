@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const SectionWrapper = styled.section`
   margin-bottom: 72px;
   padding: 32px;
-  background-color: ${({ theme }) => theme.color.white};
-  box-shadow: 0px 4px 12px 0px ${({ theme }) => theme.color.darkHeather};
+  background-color: ${({ theme }) => theme.sectionBackground};
+  box-shadow: 0px 4px 12px 0px ${({ theme }) => theme.portfolio.shadow};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
     margin: 0 16px 72px;
@@ -22,11 +22,11 @@ export const SectionHeader = styled.h2`
   line-height: 36.31px;
   margin: 0;
   padding-bottom: 15px;
-  border-bottom: 1px solid ${({ theme }) => theme.color.darkIron};
+  border-bottom: 1px solid ${({ theme }) => theme.headerUnderline};
   display: flex;
   gap: 16px;
   align-items: center;
-  color: ${({theme}) => theme.color.mineShaft};
+  color: ${({theme}) => theme.colors.secondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
    font-size: 18px;

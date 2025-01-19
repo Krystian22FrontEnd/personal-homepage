@@ -28,10 +28,10 @@ export const StyledLi = styled.li`
   font-size: 18px;
   font-weight: 400;
   line-height: 25.2px;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.site.textSecondary};
 
   &::marker {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.primary};
     font-size: 24px;
   }
 
