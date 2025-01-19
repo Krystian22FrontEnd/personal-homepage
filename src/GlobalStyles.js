@@ -11,8 +11,9 @@ html {
 
 body {
   font-family: "Inter", serif;
-  background-color: ${({ theme }) => theme.color.whiteLilac};
+  background-color: ${({ theme }) => theme.site.background};
   margin-top: 119px;
+  transition: all 0.5s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
     margin-top: 50px;
