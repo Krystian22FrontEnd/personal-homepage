@@ -31,7 +31,7 @@ export const Span = styled.span`
   font-size: 12px;
   font-weight: 700;
   line-height: 15.6px;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.site.textSecondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     display: none;
@@ -83,7 +83,7 @@ export const HeaderParagraph = styled.p`
   font-size: 12px;
   font-weight: 700;
   line-height: 15.6px;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.site.textSecondary};
   margin: 0;
   padding-bottom: 12px;
 
@@ -98,7 +98,7 @@ export const HeaderH2 = styled.h2`
   line-height: 45.99px;
   margin: 0;
   padding-bottom: 35px;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.secondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 22px;
@@ -111,7 +111,7 @@ export const HeaderDescription = styled.p`
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.site.textSecondary};
   margin: 0;
   padding-bottom: 32px;
 
@@ -129,16 +129,16 @@ export const HeaderButton = styled.a`
   line-height: 24.28px;
   padding: 12px 16px;
   border-radius: 4px;
-  border: 1px solid;
+  border: 1px solid ${({theme}) => theme.colors.primary};
   width: 154px;
-  background-color: ${({ theme }) => theme.color.scienceBlue};
-  color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.button.text};
   display: flex;
   justify-content: space-around;
   text-decoration: none;
 
   &:hover {
-    border: 1px solid ${({ theme }) => theme.color.darkIron};
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.button.shadow};
     cursor: pointer;
   }
 

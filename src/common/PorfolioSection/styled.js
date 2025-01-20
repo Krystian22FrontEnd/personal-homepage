@@ -7,11 +7,11 @@ export const FlexContainer = styled.div`
   flex-direction: column;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
-   margin: 0 16px 0;
+    margin: 0 16px 0;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-   margin: 0 16px 0 16px;
+    margin: 0 16px 0 16px;
   }
 `;
 
@@ -19,7 +19,7 @@ export const StyledGitIcon = styled(GitIcon)`
   width: 40px;
   height: 40px;
   margin-bottom: 12px;
-  fill: ${({ theme }) => theme.color.scienceBlue};
+  fill: ${({ theme }) => theme.colors.primary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     width: 32px;
@@ -31,7 +31,7 @@ export const PortfolioHeader = styled.h2`
   font-size: 30px;
   font-weight: 900;
   line-height: 36.31px;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.secondary};
   margin: 0;
   padding-bottom: 8px;
 
@@ -47,6 +47,7 @@ export const PortfolioParagraph = styled.p`
   font-weight: 400;
   line-height: 28px;
   margin: 0;
+  color: ${({ theme }) => theme.colors.secondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 17px;
@@ -69,17 +70,18 @@ export const PortfolioList = styled.ul`
 `;
 
 export const PortfolioListContent = styled.li`
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.sectionBackground};
   border-radius: 4px;
-  border: 6px solid ${({ theme }) => theme.color.darkIron};
-  box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.color.darkViolet};
+  border: 6px solid ${({ theme }) => theme.portfolio.border};
+  box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.portfolio.shadow};
   padding: 56px;
   list-style-type: none;
   display: grid;
   gap: 24px;
+  transition: all 1s ease;
 
   &:hover {
-    border: 6px solid ${({ theme }) => theme.color.jordyBlue};
+    border: 6px solid ${({ theme }) => theme.portfolio.borderHover};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
@@ -93,7 +95,7 @@ export const PortfolioName = styled.h3`
   font-weight: 700;
   line-height: 29.05px;
   margin: 0;
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.portfolio.header};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 16px;
@@ -106,7 +108,7 @@ export const PortfolioDescription = styled.p`
   font-weight: 400;
   line-height: 25.2px;
   margin: 0;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.site.textSecondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 14px;
@@ -115,7 +117,7 @@ export const PortfolioDescription = styled.p`
 `;
 
 export const PortfolioParagraphLink = styled(PortfolioDescription)`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.site.textSecondary};
   display: grid;
   grid-template-columns: 64px 1fr;
   padding-bottom: 0;
@@ -128,7 +130,7 @@ export const PortfolioParagraphLink = styled(PortfolioDescription)`
 `;
 
 export const PortfolioLink = styled.a`
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.primary};
   text-decoration: none;
   word-break: break-all;
 

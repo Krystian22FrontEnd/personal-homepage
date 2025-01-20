@@ -15,11 +15,11 @@ import {
 import poster from "../../images/poster.png";
 import email from "../PersonalData/email";
 
-const Header = () => {
+const Header = ({onToggleTheme}) => {
   return (
     <>
       <HeaderSwitchButtonWrapper>
-        <HeaderSwitchButton>
+        <HeaderSwitchButton onClick={onToggleTheme}>
           <Span>DARK MODE OFF</Span> <HeaderToggleOffIcon />
         </HeaderSwitchButton>
       </HeaderSwitchButtonWrapper>

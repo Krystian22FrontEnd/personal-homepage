@@ -11,7 +11,7 @@ export const FooterWrapper = styled.div`
   gap: 24px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
-    margin: 120px 16px 109px ;
+    margin: 120px 16px 109px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
@@ -25,7 +25,7 @@ export const FooterParagraph = styled.p`
   font-size: 12px;
   font-weight: 700;
   line-height: 15.6px;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.site.textSecondary};
   margin: 0;
 `;
 
@@ -33,12 +33,12 @@ export const FooterEmail = styled.a`
   font-size: 32px;
   font-weight: 900;
   line-height: 38.73px;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.secondary};
   margin: 0;
   text-decoration: none;
 
   &:hover {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.primary};
     cursor: pointer;
   }
 
@@ -52,7 +52,7 @@ export const FooterDescrtiption = styled.p`
   font-size: 18px;
   font-weight: 400;
   line-height: 25.2px;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.secondary};
   text-align: justify;
   padding-bottom: 32px;
   margin: 0;
@@ -71,7 +71,7 @@ export const FooterLinks = styled.div`
 `;
 
 export const StyledGitBlack = styled(StyledGitIcon)`
-  fill: ${({ theme }) => theme.color.mineShaft} !important;
+  fill: ${({ theme }) => theme.colors.secondary} !important;
   width: 48px;
   height: 48px;
   margin-right: 24px;
@@ -79,7 +79,7 @@ export const StyledGitBlack = styled(StyledGitIcon)`
   pointer-events: bounding-box;
 
   :hover {
-    fill: ${({ theme }) => theme.color.scienceBlue};
+    fill: ${({ theme }) => theme.colors.primary};
     cursor: pointer;
   }
 
@@ -91,13 +91,14 @@ export const StyledGitBlack = styled(StyledGitIcon)`
 `;
 
 export const StyledLinkedinIcon = styled(LinkedinIcon)`
-    width: 48px;
+  fill: ${({ theme }) => theme.colors.secondary} !important;
+  width: 48px;
   height: 48px;
   margin-right: 24px;
   pointer-events: bounding-box;
 
   :hover {
-    fill: ${({ theme }) => theme.color.scienceBlue};
+    fill: ${({ theme }) => theme.colors.primary};
     cursor: pointer;
   }
 

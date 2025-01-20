@@ -14,6 +14,7 @@ export const LoadingText = styled.p`
   line-height: 28px;
   text-align: center;
   margin: 0 0 48px 0;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const Loader = styled(Ellipse)`

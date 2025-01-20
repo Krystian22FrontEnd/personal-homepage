@@ -20,6 +20,7 @@ export const ErrorHeader = styled.h3`
   line-height: 29.05px;
   margin: 0;
   margin-top: -16px;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const ErrorParagraph = styled.p`
@@ -27,20 +28,21 @@ export const ErrorParagraph = styled.p`
   font-weight: 400;
   line-height: 28px;
   margin: 0;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
 export const ErrorButtonLink = styled.a`
   font-size: 20.06px;
   font-weight: 600;
   line-height: 24.28px;
-  color: ${({ theme }) => theme.color.white};
-  background-color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.button.text};
+  background-color: ${({ theme }) => theme.colors.primary};
   padding: 12px 16px;
   text-decoration: none;
   border-radius: 4px;
-  border: 1px solid;
+  border: 1px solid ${({theme}) => theme.colors.primary};
 
   &:hover {
-    border: 1px solid ${({ theme }) => theme.color.darkIron};
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.button.shadow};
     cursor: pointer;
   }
 `;
