@@ -53,8 +53,6 @@ export const lightTheme = {
   themeSwitch: {
     background: theme.color.scienceBlue,
     icon: theme.color.mineShaft,
-    iconBox: theme.color.slateGray,
-    border: theme.color.slateGray,
   },
 };
 
