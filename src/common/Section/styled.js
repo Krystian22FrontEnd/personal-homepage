@@ -5,6 +5,7 @@ export const SectionWrapper = styled.section`
   padding: 32px;
   background-color: ${({ theme }) => theme.sectionBackground};
   box-shadow: 0px 4px 12px 0px ${({ theme }) => theme.portfolio.shadow};
+  transition: all 1s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
     margin: 0 16px 72px;

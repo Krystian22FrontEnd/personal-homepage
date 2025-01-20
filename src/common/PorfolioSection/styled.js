@@ -7,11 +7,11 @@ export const FlexContainer = styled.div`
   flex-direction: column;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
-   margin: 0 16px 0;
+    margin: 0 16px 0;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-   margin: 0 16px 0 16px;
+    margin: 0 16px 0 16px;
   }
 `;
 
@@ -47,7 +47,7 @@ export const PortfolioParagraph = styled.p`
   font-weight: 400;
   line-height: 28px;
   margin: 0;
-  color: ${({theme}) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 17px;
@@ -78,6 +78,7 @@ export const PortfolioListContent = styled.li`
   list-style-type: none;
   display: grid;
   gap: 24px;
+  transition: all 1s ease;
 
   &:hover {
     border: 6px solid ${({ theme }) => theme.portfolio.borderHover};
