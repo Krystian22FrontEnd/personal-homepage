@@ -20,11 +20,13 @@ export const SwitchWrapper = styled.div`
 `;
 
 export const SwitchContainer = styled.div`
-  width: 50px;
-  height: 24px;
+  display: flex;
+  align-items: center;
+  width: 48px;
+  height: 26px;
   background-color: ${({ theme }) => theme.themeSwitch.background};
   border-radius: 24px;
-  padding: 2px;
+  padding: 0 2px 0;
   cursor: pointer;
   position: relative;
   transition: background-color 1s ease-in-out;
@@ -36,15 +38,16 @@ export const SwitchContainer = styled.div`
 `;
 
 export const SwitchCircle = styled.div`
+  display: flex;
+  align-items: center;
   width: 20px;
   height: 20px;
   background-color: ${({ theme }) => theme.themeSwitch.icon};
   border-radius: 50%;
-  position: absolute;
-  top: 2px;
+
   transition: transform 0.5s ease-in-out;
   transform: ${({ $isDark }) =>
-    $isDark ? "translateX(26px)" : "translateX(0)"};
+    $isDark ? "translateX(24px)" : "translateX(0)"};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     width: 12px;
