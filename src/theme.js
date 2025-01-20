@@ -2,6 +2,7 @@ export const theme = {
   color: {
     white: "#FFFFFF",
     whiteLilac: "#FBFBFE",
+    mercury: "#E5E5E5",
     mischka: "#E5E4E7",
     jordyBlue: "#9ec6f5",
     dodgerBlue: "#2188FF",
@@ -50,8 +51,8 @@ export const lightTheme = {
   },
 
   themeSwitch: {
-    background: theme.color.ironTransparent,
-    icon: theme.color.white,
+    background: theme.color.scienceBlue,
+    icon: theme.color.mineShaft,
     iconBox: theme.color.slateGray,
     border: theme.color.slateGray,
   },
@@ -85,9 +86,7 @@ export const darkTheme = {
   },
 
   themeSwitch: {
-    background: theme.color.mineShaft,
-    icon: theme.color.mineShaft,
-    iconBox: theme.color.white,
-    border: theme.color.white,
+    background: theme.color.dodgerBlue,
+    icon: theme.color.white,
   },
 };

@@ -1,10 +1,14 @@
 import styled from "styled-components";
 import { ReactComponent as MessageIcon } from "../../icons/Message.svg";
-import { ReactComponent as ToggleOffLightIcon } from "../../icons/ToggleOffLight.svg";
+import { ReactComponent as sunIcon } from "../../icons/sunIcon.svg";
+import { ReactComponent as moonIcon } from "../../icons/moonIcon.svg";
 
-export const HeaderSwitchButtonWrapper = styled.div`
+export const SwitchWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  color: ${({ theme }) => theme.themeSwitch.icon};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletHorizontal}) {
     margin-right: 20px;
@@ -15,26 +19,57 @@ export const HeaderSwitchButtonWrapper = styled.div`
   }
 `;
 
-export const HeaderSwitchButton = styled.button`
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-`;
-
-export const HeaderToggleOffIcon = styled(ToggleOffLightIcon)`
-  width: 48px;
-  height: 26px;
-`;
-export const Span = styled.span`
-  padding-right: 12px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15.6px;
-  color: ${({ theme }) => theme.site.textSecondary};
+export const SwitchContainer = styled.div`
+  width: 50px;
+  height: 24px;
+  background-color: ${({ theme }) => theme.themeSwitch.background};
+  border-radius: 24px;
+  padding: 2px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 1s ease-in-out;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-    display: none;
+    width: 30px;
+    height: 16px;
+  }
+`;
+
+export const SwitchCircle = styled.div`
+  width: 20px;
+  height: 20px;
+  background-color: ${({ theme }) => theme.themeSwitch.icon};
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  transition: transform 0.5s ease-in-out;
+  transform: ${({ $isDark }) =>
+    $isDark ? "translateX(26px)" : "translateX(0)"};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 12px;
+    height: 12px;
+    transform: ${({ $isDark }) =>
+      $isDark ? "translateX(14px)" : "translateX(0)"};
+  }
+`;
+export const StyledSunIcon = styled(sunIcon)`
+  width: 30px;
+  height: 30px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 20px;
+    height: 20px;
+  }
+`;
+
+export const StyledMoonIcon = styled(moonIcon)`
+  width: 30px;
+  height: 30px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 20px;
+    height: 20px;
   }
 `;
 
@@ -129,7 +164,7 @@ export const HeaderButton = styled.a`
   line-height: 24.28px;
   padding: 12px 16px;
   border-radius: 4px;
-  border: 1px solid ${({theme}) => theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.colors.primary};
   width: 154px;
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.button.text};
