@@ -32,8 +32,8 @@ const Header = ({ onToggleTheme, isDark }) => {
           <HeaderParagraph>This is</HeaderParagraph>
           <HeaderH2>Krystian Krupiński</HeaderH2>
           <HeaderDescription>
-            👨🏻‍💻 I'm a passionate Frontend Developer in love with React, currently
-            looking for new job opportunities.
+            👨🏻‍💻 "I'm a Frontend Developer who loves to work in React and is
+            currently looking for new job opportunities."
           </HeaderDescription>
           <HeaderButton href={`mailto:${email}`}>
             <HeaderMessageIcon />

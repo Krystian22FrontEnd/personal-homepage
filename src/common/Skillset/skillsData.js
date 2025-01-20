@@ -8,8 +8,6 @@ export const skillsData = [
   "CSS Grid",
   "CSS Flexbox",
   "React Router",
-  "Redux-Saga",
-  "Redux (Toolkit)",
   "React Hooks",
   "Error handling",
   "Working with API (fetch, axios)",
