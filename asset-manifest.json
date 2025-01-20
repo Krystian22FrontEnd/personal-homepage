@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.75e1ed3d.js",
+    "main.js": "/personal-homepage/static/js/main.66c68fd7.js",
     "static/js/453.61d4ab14.chunk.js": "/personal-homepage/static/js/453.61d4ab14.chunk.js",
     "static/media/poster.png": "/personal-homepage/static/media/poster.2d7fc77398df9a2bc419.png",
-    "static/media/ToggleOffLight.svg": "/personal-homepage/static/media/ToggleOffLight.454dc3b0fabe71f04c2be204161cb00b.svg",
     "index.html": "/personal-homepage/index.html",
+    "static/media/sunIcon.svg": "/personal-homepage/static/media/sunIcon.4d1e941d4adce7ed30bae4177d388de7.svg",
     "static/media/mark-github.svg": "/personal-homepage/static/media/mark-github.e3a48803407871487907a47355287415.svg",
-    "static/media/LinkedIN_black.svg": "/personal-homepage/static/media/LinkedIN_black.37dc7a697481956094a61b7984dd5cb0.svg",
-    "static/media/Danger.svg": "/personal-homepage/static/media/Danger.1d5161794562659fe8646d83e342022b.svg",
+    "static/media/Danger.svg": "/personal-homepage/static/media/Danger.cf55c42b604f0af14072081d871f59d6.svg",
+    "static/media/LinkedIN_black.svg": "/personal-homepage/static/media/LinkedIN_black.5931282995702629c2ec545270525a5c.svg",
     "static/media/Message.svg": "/personal-homepage/static/media/Message.5c480520087275a63a490a2f3ae5107a.svg",
+    "static/media/moonIcon.svg": "/personal-homepage/static/media/moonIcon.09ee06eb221b82bd2b68c2a88120a457.svg",
     "static/media/Ellipse-spinner.svg": "/personal-homepage/static/media/Ellipse-spinner.f0cf9f6aef365567ad9b9a0d34b8b760.svg",
-    "main.75e1ed3d.js.map": "/personal-homepage/static/js/main.75e1ed3d.js.map",
+    "main.66c68fd7.js.map": "/personal-homepage/static/js/main.66c68fd7.js.map",
     "453.61d4ab14.chunk.js.map": "/personal-homepage/static/js/453.61d4ab14.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.75e1ed3d.js"
+    "static/js/main.66c68fd7.js"
   ]
 }
