@@ -12,8 +12,8 @@ export const SectionWrapper = styled.section`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-   margin: 0 14px 50px;
-   padding: 16px;
+    margin: 0 14px 50px;
+    padding: 16px;
   }
 `;
 
@@ -27,11 +27,10 @@ export const SectionHeader = styled.h2`
   display: flex;
   gap: 16px;
   align-items: center;
-  color: ${({theme}) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-   font-size: 18px;
-   line-height: 21.78px;
+    font-size: 18px;
+    line-height: 21.78px;
   }
 `;
-

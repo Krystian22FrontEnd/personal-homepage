@@ -1,1 +1,1 @@
-export default "Krystian22FrontEnd"
+export default "Krystian22FrontEnd";

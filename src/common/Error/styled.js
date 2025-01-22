@@ -39,7 +39,7 @@ export const ErrorButtonLink = styled.a`
   padding: 12px 16px;
   text-decoration: none;
   border-radius: 4px;
-  border: 1px solid ${({theme}) => theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.colors.primary};
 
   &:hover {
     box-shadow: 0 0 0 2px ${({ theme }) => theme.button.shadow};
