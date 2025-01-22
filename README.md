@@ -16,7 +16,7 @@ Hi, I'm **Krystian Krupiński**. Welcome to my portfolio website! Here, you can 
 - Flex
 - Media Queries
 
-### Features
+## Features
 
 **About me:** Get to know me through my profile and brief introduction.\
 **Skills:** List of my current skills.\
@@ -25,7 +25,6 @@ Hi, I'm **Krystian Krupiński**. Welcome to my portfolio website! Here, you can 
 **Contact:** Links to media where you can find me and my email.\
 **Theme Toggle:** allows to toggle between light and dark theme.\
 **Responsive Design:** for a smooth experience across all devices.\
-**GitHub Integration:**
 
 # Getting Started with Create React App
 
