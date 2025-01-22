@@ -1,5 +1,5 @@
 import { StyledUl, StyledLi } from "./styled";
-import {  skillsData } from "./skillsData";
+import { skillsData } from "./skillsData";
 
 const Skillset = () => {
   return (

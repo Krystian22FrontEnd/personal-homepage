@@ -36,11 +36,11 @@ export const StyledLi = styled.li`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-   font-size: 14px;
-   line-height: 16.94px;
+    font-size: 14px;
+    line-height: 16.94px;
 
-   &::marker {
-    font-size: 18px;
-  }
+    &::marker {
+      font-size: 18px;
+    }
   }
 `;

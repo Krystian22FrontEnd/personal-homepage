@@ -7,7 +7,6 @@ import {
   ErrorButtonLink,
 } from "./styled";
 
-
 const Error = () => {
   return (
     <ErrorWrapper>
@@ -17,11 +16,7 @@ const Error = () => {
         Sorry, failed to load Github projects. You can check them directly on
         Github.
       </ErrorParagraph>
-      <ErrorButtonLink
-        target="_blank"
-        rel="noopener noreferrer"
-        href={github}
-      >
+      <ErrorButtonLink target="_blank" rel="noopener noreferrer" href={github}>
         Go to Github
       </ErrorButtonLink>
     </ErrorWrapper>

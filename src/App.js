@@ -21,7 +21,7 @@ function App() {
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Container>
-        <Header onToggleTheme={themeToggler} isDark = {isDark}/>
+        <Header onToggleTheme={themeToggler} isDark={isDark} />
         <Section title={"My skillset includes 🛠️"} body={<Skillset />} />
         <Section title={"What I want to learn next 🚀"} body={<ToLearn />} />
         <PortfolioSection />
