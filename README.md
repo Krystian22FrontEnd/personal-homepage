@@ -1,6 +1,6 @@
 # Personal Homepage
 
-"Hi, I'm **Krystian Krupiński**. Welcome to my portfolio website! Here, you can get to know me better. You'll find the projects I'm most proud of, what I plan to learn next, and of course, my contact details."
+Hi, I'm **Krystian Krupiński**. Welcome to my portfolio website! Here, you can get to know me better. You'll find the projects I'm most proud of, what I plan to learn next, and of course, my contact details.
 
 ## Technologies Used
 
@@ -18,13 +18,13 @@
 
 ### Features
 
-**About me:** Get to know me through my profile and brief introduction.
-**Skills:** List of my current skills.
-**Goals:** Technologies I plan to learn in the future.
-**Portfolio:** List of my project fetched from GitHub API.
-**Contact:** Links to media where you can find me and my email.
-**Theme Toggle:** allows to toggle between light and dark theme.
-**Responsive Design:** for a smooth experience across all devices.
+**About me:** Get to know me through my profile and brief introduction.\
+**Skills:** List of my current skills.\
+**Goals:** Technologies I plan to learn in the future.\
+**Portfolio:** List of my project fetched from GitHub API.\
+**Contact:** Links to media where you can find me and my email.\
+**Theme Toggle:** allows to toggle between light and dark theme.\
+**Responsive Design:** for a smooth experience across all devices.\
 **GitHub Integration:**
 
 # Getting Started with Create React App
