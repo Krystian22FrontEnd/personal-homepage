@@ -13,7 +13,7 @@ import {
   HeaderButton,
   HeaderMessageIcon,
 } from "./styled";
-import poster from "../../images/poster.png";
+import Me from "../../images/meAgain.JPG";
 import email from "../PersonalData/email";
 
 const Header = ({ onToggleTheme, isDark }) => {
@@ -27,7 +27,7 @@ const Header = ({ onToggleTheme, isDark }) => {
         <StyledMoonIcon />
       </SwitchWrapper>
       <HeaderContainer>
-        <HeaderImage src={poster} alt="poster" />
+        <HeaderImage src={Me} alt="Krystian Krupiński" />
         <HeaderColumnWrapper>
           <HeaderParagraph>This is</HeaderParagraph>
           <HeaderH2>Krystian Krupiński</HeaderH2>
