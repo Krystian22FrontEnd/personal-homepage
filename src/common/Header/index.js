@@ -13,7 +13,7 @@ import {
   HeaderButton,
   HeaderMessageIcon,
 } from "./styled";
-import Me from "../../images/meAgain.JPG";
+import Me from "../../images/Krystian.jpg";
 import email from "../PersonalData/email";
 
 const Header = ({ onToggleTheme, isDark }) => {
