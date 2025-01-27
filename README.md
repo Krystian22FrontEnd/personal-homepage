@@ -1,6 +1,7 @@
 # Personal Homepage
 
 Hi, I'm **Krystian Krupiński**. Welcome to my portfolio website! Here, you can get to know me better. You'll find the projects I'm most proud of, what I plan to learn next, and of course, my contact details.
+![portfolio](https://github.com/user-attachments/assets/11ffc3a1-5f84-4d58-946b-61f45687a41a)
 
 ## Technologies Used
 
