@@ -10,7 +10,7 @@ import email from "../../email";
 const Footer = () => {
   return (
     <FooterWrapper>
-      <FooterParagraph>Let's talk</FooterParagraph>
+      <FooterParagraph>LET'S TALK</FooterParagraph>
       <FooterEmail href={`mailto:${email}`}>{email}</FooterEmail>
       <FooterDescrtiption>
         I'm always open to new projects whenever I have the time. If you have a

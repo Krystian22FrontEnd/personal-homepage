@@ -18,7 +18,7 @@ const Header = ({ themeButton }) => {
       <HeaderContainer>
         <HeaderImage src={Me} alt="Krystian Krupiński" />
         <HeaderColumnWrapper>
-          <HeaderParagraph>This is</HeaderParagraph>
+          <HeaderParagraph>THIS IS</HeaderParagraph>
           <HeaderH2>Krystian Krupiński</HeaderH2>
           <HeaderDescription>
             👨🏻‍💻 "I'm a Frontend Developer who loves to work in React and is
