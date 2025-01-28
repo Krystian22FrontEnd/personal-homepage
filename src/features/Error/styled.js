@@ -7,6 +7,11 @@ export const Wrapper = styled.div`
   align-items: center;
   margin: 88px 0 140px 0;
   gap: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    margin: 44px 0 70px 0;
+    gap: 26px;
+  }
 `;
 
 export const StyledDangerIcon = styled(DangerIcon)`
@@ -21,6 +26,11 @@ export const Text = styled.h3`
   margin: 0;
   margin-top: -16px;
   color: ${({ theme }) => theme.colors.secondary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 17px;
+    line-height: 26.05px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -29,7 +39,14 @@ export const Paragraph = styled.p`
   line-height: 28px;
   margin: 0;
   color: ${({ theme }) => theme.colors.secondary};
+  text-align: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 `;
+
 export const ButtonLink = styled.a`
   font-size: 20.06px;
   font-weight: 600;
@@ -44,5 +61,11 @@ export const ButtonLink = styled.a`
   &:hover {
     box-shadow: 0 0 0 2px ${({ theme }) => theme.button.shadow};
     cursor: pointer;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 10px 14px;
   }
 `;
