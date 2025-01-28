@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterWrapper = styled.div`
+export const FooterWrapper = styled.footer`
   max-width: 691px;
   display: flex;
   flex-direction: column;
