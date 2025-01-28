@@ -6,6 +6,10 @@ export const LoadingWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 88px 0 140px 0;
+
+  @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+    margin: 44px 0 70px 0;
+  }
 `;
 
 export const LoadingText = styled.p`
@@ -15,6 +19,11 @@ export const LoadingText = styled.p`
   text-align: center;
   margin: 0 0 48px 0;
   color: ${({ theme }) => theme.colors.secondary};
+
+  @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+    font-size: 17px;
+    margin: 0 0 24px 0;
+  }
 `;
 
 export const Loader = styled(Ellipse)`
@@ -31,5 +40,10 @@ export const Loader = styled(Ellipse)`
     to {
       transform: rotate(360deg);
     }
+  }
+
+  @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+    width: 80px;
+    height: 80px;
   }
 `;
