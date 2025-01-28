@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   gap: 8px;
 `;
 
-export const StyledUl = styled.ul`
+export const List = styled.ul`
   padding: 32px 0 0 24px;
   display: grid;
   gap: 8px 115px;
@@ -24,7 +24,7 @@ export const StyledUl = styled.ul`
   }
 `;
 
-export const StyledLi = styled.li`
+export const ListItem = styled.li`
   font-size: 18px;
   font-weight: 400;
   line-height: 25.2px;

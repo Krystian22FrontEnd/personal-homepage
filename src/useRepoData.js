@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import username from "./common/PersonalData/username";
+import username from "../src/username";
 
 export const useRepoData = () => {
   const [repoData, setRepoData] = useState({

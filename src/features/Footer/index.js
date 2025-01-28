@@ -3,13 +3,9 @@ import {
   FooterParagraph,
   FooterEmail,
   FooterDescrtiption,
-  FooterLinks,
-  StyledGitBlack,
-  StyledLinkedinIcon,
 } from "./styled";
-import linkedin from "../PersonalData/linkedin";
-import github from "../PersonalData/github";
-import email from "../PersonalData/email";
+import { SocialMedia } from "./SocialMedia";
+import email from "../../email";
 
 const Footer = () => {
   return (
@@ -21,24 +17,7 @@ const Footer = () => {
         website, dashboard or mobile app in mind and need some help to make your
         ideas come to life, feel free to contact me.
       </FooterDescrtiption>
-      <FooterLinks>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          title="GitHub"
-          href={github}
-        >
-          <StyledGitBlack />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Linkedin"
-          href={linkedin}
-        >
-          <StyledLinkedinIcon />
-        </a>
-      </FooterLinks>
+      <SocialMedia />
     </FooterWrapper>
   );
 };

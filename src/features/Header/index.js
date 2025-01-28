@@ -1,9 +1,4 @@
 import {
-  SwitchWrapper,
-  StyledSunIcon,
-  SwitchContainer,
-  SwitchCircle,
-  StyledMoonIcon,
   HeaderContainer,
   HeaderImage,
   HeaderColumnWrapper,
@@ -14,18 +9,12 @@ import {
   HeaderMessageIcon,
 } from "./styled";
 import Me from "../../images/Krystian.jpg";
-import email from "../PersonalData/email";
+import email from "../../email";
 
-const Header = ({ onToggleTheme, isDark }) => {
+const Header = ({ themeButton }) => {
   return (
     <>
-      <SwitchWrapper>
-        <StyledSunIcon />
-        <SwitchContainer onClick={onToggleTheme}>
-          <SwitchCircle $isDark={isDark} />
-        </SwitchContainer>
-        <StyledMoonIcon />
-      </SwitchWrapper>
+      {themeButton}
       <HeaderContainer>
         <HeaderImage src={Me} alt="Krystian Krupiński" />
         <HeaderColumnWrapper>

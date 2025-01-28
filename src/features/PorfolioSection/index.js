@@ -14,7 +14,7 @@ import {
 import Loading from "../Loading";
 import Error from "../Error";
 import { useRepoData } from "../../useRepoData";
-import username from "../PersonalData/username";
+import username from "../../username";
 
 const PortfolioSection = () => {
   const repoData = useRepoData({ username });

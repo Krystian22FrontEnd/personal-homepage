@@ -1,13 +1,13 @@
-import { StyledUl, StyledLi } from "./styled";
+import { List, ListItem } from "./styled";
 import { skillsData } from "./skillsData";
 
 const Skillset = () => {
   return (
-    <StyledUl>
+    <List>
       {skillsData.map((skill) => (
-        <StyledLi key={skill}>{skill}</StyledLi>
+        <ListItem key={skill}>{skill}</ListItem>
       ))}
-    </StyledUl>
+    </List>
   );
 };
 

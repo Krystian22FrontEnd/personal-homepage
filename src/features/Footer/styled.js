@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { ReactComponent as LinkedinIcon } from "../../icons/LinkedIN_black.svg";
-import { StyledGitIcon } from "../PorfolioSection/styled";
 
 export const FooterWrapper = styled.div`
   max-width: 691px;
@@ -40,6 +38,7 @@ export const FooterEmail = styled.a`
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
     cursor: pointer;
+    transition: color 0.3s;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
@@ -60,47 +59,16 @@ export const FooterDescrtiption = styled.p`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 14px;
     line-height: 16.94px;
-    padding-bottom: 40px;
+    padding-bottom: 28px;
   }
 `;
 
-export const FooterLinks = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-`;
-
-export const StyledGitBlack = styled(StyledGitIcon)`
-  fill: ${({ theme }) => theme.colors.secondary} !important;
-  width: 48px;
-  height: 48px;
-  margin-right: 24px;
-  margin-bottom: 0;
-  pointer-events: bounding-box;
-
-  :hover {
-    fill: ${({ theme }) => theme.colors.primary};
-    cursor: pointer;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-    width: 32px;
-    height: 32px;
-    margin-right: 16px;
-  }
-`;
-
-export const StyledLinkedinIcon = styled(LinkedinIcon)`
+export const StyledIcon = (Icon) => styled(Icon)`
   fill: ${({ theme }) => theme.colors.secondary} !important;
   width: 48px;
   height: 48px;
   margin-right: 24px;
   pointer-events: bounding-box;
-
-  :hover {
-    fill: ${({ theme }) => theme.colors.primary};
-    cursor: pointer;
-  }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     width: 32px;

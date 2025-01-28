@@ -26,7 +26,7 @@ Hi, I'm **Krystian Krupiński**. Welcome to my portfolio website! Here, you can 
 **Portfolio:** List of my project fetched from GitHub API.\
 **Contact:** Links to media where you can find me and my email.\
 **Theme Toggle:** allows to toggle between light and dark theme.\
-**Responsive Design:** for a smooth experience across all devices.\
+**Responsive Design:** for a smooth experience across all devices.
 
 # Getting Started with Create React App
 

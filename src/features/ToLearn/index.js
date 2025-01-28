@@ -1,15 +1,15 @@
-import { Wrapper, StyledUl, StyledLi } from "../Skillset/styled";
+import { Wrapper, List, ListItem } from "../Skillset/styled";
 
 import { toLearn } from "../Skillset/skillsData";
 
 const ToLearn = () => {
   return (
     <Wrapper>
-      <StyledUl>
+      <List>
         {toLearn.map((learn) => (
-          <StyledLi key={learn}>{learn}</StyledLi>
+          <ListItem key={learn}>{learn}</ListItem>
         ))}
-      </StyledUl>
+      </List>
     </Wrapper>
   );
 };

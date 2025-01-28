@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as DangerIcon } from "../../icons/Danger.svg";
 
-export const ErrorWrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@ export const StyledDangerIcon = styled(DangerIcon)`
   height: 48px;
 `;
 
-export const ErrorHeader = styled.h3`
+export const Text = styled.h3`
   font-size: 24px;
   font-weight: 700;
   line-height: 29.05px;
@@ -23,14 +23,14 @@ export const ErrorHeader = styled.h3`
   color: ${({ theme }) => theme.colors.secondary};
 `;
 
-export const ErrorParagraph = styled.p`
+export const Paragraph = styled.p`
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   margin: 0;
   color: ${({ theme }) => theme.colors.secondary};
 `;
-export const ErrorButtonLink = styled.a`
+export const ButtonLink = styled.a`
   font-size: 20.06px;
   font-weight: 600;
   line-height: 24.28px;
