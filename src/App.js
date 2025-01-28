@@ -1,14 +1,15 @@
 import { Container } from "./common/Container";
-import Header from "./common/Header";
+import Header from "./features/Header";
 import Section from "./common/Section";
-import Skillset from "./common/Skillset";
-import ToLearn from "./common/ToLearn";
-import PortfolioSection from "./common/PorfolioSection";
-import Footer from "./common/Footer";
+import Skillset from "./features/Skillset";
+import ToLearn from "./features/ToLearn";
+import PortfolioSection from "./features/PorfolioSection";
+import Footer from "./features/Footer";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./theme";
 import { GlobalStyle } from "./GlobalStyles";
 import { useState } from "react";
+import { SwitchTheme } from "./features/Header/SwitchTheme";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -21,7 +22,7 @@ function App() {
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Container>
-        <Header onToggleTheme={themeToggler} isDark={isDark} />
+        <Header themeButton = {<SwitchTheme onToggleTheme={themeToggler} isDark={isDark}/> } />
         <Section title={"My skillset includes 🛠️"} body={<Skillset />} />
         <Section title={"What I want to learn next 🚀"} body={<ToLearn />} />
         <PortfolioSection />
