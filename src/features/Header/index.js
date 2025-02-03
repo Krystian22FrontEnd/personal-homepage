@@ -24,7 +24,7 @@ const Header = ({ themeButton }) => {
             👨🏻‍💻 "I'm a Frontend Developer who loves to work in React and is
             currently looking for new job opportunities."
           </HeaderDescription>
-          <HeaderButton href={`mailto:${email}`}>
+          <HeaderButton href={`mailto:${email}`} title={email}>
             <HeaderMessageIcon />
             Hire me
           </HeaderButton>
