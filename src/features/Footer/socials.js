@@ -6,12 +6,12 @@ export const socials = [
   {
     name: "GitHub",
     url: "https://github.com/Krystian22FrontEnd",
-    Icon: StyledIcon(LinkedinIcon),
+    Icon: StyledIcon(GitIcon),
   },
 
   {
     name: "linkedin",
     url: "https://www.linkedin.com/in/krystian-krupi%C5%84ski-4ab044347/",
-    Icon: StyledIcon(GitIcon),
+    Icon: StyledIcon(LinkedinIcon),
   },
 ];
