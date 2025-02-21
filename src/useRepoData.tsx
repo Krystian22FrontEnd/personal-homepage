@@ -1,21 +1,33 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import username from "../src/username";
+import username from "./username";
+
+interface RepoData {
+  id: number;
+  name: string;
+  description: string;
+  homepage: string;
+  html_url: string;
+}
+
+type Status =
+  | { status: "loading"; data?: RepoData }
+  | { status: "success"; data: RepoData[] }
+  | { status: "error" };
 
 export const useRepoData = () => {
-  const [repoData, setRepoData] = useState({
+  const [repoData, setRepoData] = useState<Status>({
     status: "loading",
-    data: [],
   });
 
   useEffect(() => {
     const axiosData = async () => {
       try {
         const githubAPIBaseURL = "https://api.github.com";
-        const response = await axios.get(
+        const response = await axios.get<RepoData[]>(
           `${githubAPIBaseURL}/users/${username}/repos?sort=created`
         );
-        const filteredRepos = response.data.filter((repo) =>
+        const filteredRepos = response.data.filter((repo: { name: string }) =>
           [
             "movie-browser",
             "personal-homepage",

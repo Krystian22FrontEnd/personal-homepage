@@ -1,3 +1,4 @@
+import { FC, SVGProps } from "react";
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
@@ -63,7 +64,7 @@ export const FooterDescrtiption = styled.p`
   }
 `;
 
-export const StyledIcon = (Icon) => styled(Icon)`
+export const StyledIcon = (Icon: FC<SVGProps<SVGSVGElement>>) => styled(Icon)`
   fill: ${({ theme }) => theme.colors.secondary} !important;
   width: 48px;
   height: 48px;

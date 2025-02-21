@@ -6,7 +6,12 @@ import {
   StyledMoonIcon,
 } from "../styled";
 
-export const SwitchTheme = ({ onToggleTheme, isDark }) => {
+interface SwitchThemeProps {
+  onToggleTheme: () => void;
+  isDark: boolean;
+}
+
+export const SwitchTheme = ({ onToggleTheme, isDark }: SwitchThemeProps) => {
   return (
     <SwitchWrapper>
       <StyledSunIcon />

@@ -1,5 +1,4 @@
 import { Wrapper, List, ListItem } from "../Skillset/styled";
-
 import { toLearn } from "../Skillset/skillsData";
 
 const ToLearn = () => {
