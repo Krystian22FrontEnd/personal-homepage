@@ -7,6 +7,7 @@ Hi, I'm **Krystian Krupiński**. Welcome to my portfolio website! Here, you can 
 ## Technologies Used
 
 - React
+- TypeScript
 - Javascript
 - Axios
 - Async/Await
