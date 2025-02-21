@@ -37,7 +37,7 @@ export const SwitchContainer = styled.div`
   }
 `;
 
-export const SwitchCircle = styled.div`
+export const SwitchCircle = styled.div<{$isDark: boolean}>`
   display: flex;
   align-items: center;
   width: 20px;

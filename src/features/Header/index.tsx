@@ -10,8 +10,13 @@ import {
 } from "./styled";
 import Me from "../../images/Krystian.jpg";
 import email from "../../email";
+import { ReactNode } from "react";
 
-const Header = ({ themeButton }) => {
+interface ThemeButtonProps {
+  themeButton: ReactNode;
+}
+
+const Header = ({ themeButton }: ThemeButtonProps) => {
   return (
     <>
       {themeButton}
