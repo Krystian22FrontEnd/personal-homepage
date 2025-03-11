@@ -24,7 +24,7 @@ export const skillsData = [
 export const toLearn = [
   "React Context",
   "Node.js",
-  "Cypres",
+  "Cypress",
   "Unit Testing",
   "TypeScript",
   "JS classes",
