@@ -28,7 +28,8 @@ export const useRepoData = () => {
           `${githubAPIBaseURL}/users/${username}/repos?sort=created`
         );
         const filteredRepos = response.data.filter((repo: { name: string }) =>
-          [
+          [ 
+            "search-recipe",
             "movie-browser",
             "personal-homepage",
             "CurrencyConverter-React",
